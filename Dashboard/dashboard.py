@@ -60,9 +60,11 @@ users_by_season = day_data.groupby(by="season").agg({
     "registered": "sum",
     "count": "sum",
 })
+print(users_by_season)  # Periksa data untuk memastikan bahwa data untuk musim tersedia
 plt.figure(figsize=(10, 6))
 sns.barplot(x=users_by_season.index, y="count", data=users_by_season, order=season_order, palette="autumn")
 plt.title("Penggunaan Bike-sharing berdasarkan Musim")
 plt.xlabel("Season")
 plt.ylabel("Total Pengguna (x1.000.0000)")
-plt.xticks(rotation=45)  
+plt.xticks(rotation=45)
+st.pyplot(plt.gcf())
