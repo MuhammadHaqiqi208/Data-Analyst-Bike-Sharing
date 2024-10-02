@@ -1,2 +1,2 @@
 link:
-https://data-analyst-bike-sharing-ccrw5nqebjujqgnjjnzltn.streamlit.app/
+https://data-analyst-bike-sharing-muhammadhaqiqi.streamlit.app/
